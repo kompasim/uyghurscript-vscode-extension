@@ -1,0 +1,22 @@
+# test
+
+miqdar a tewellut bolsun
+miqdar s tewellut bolsun
+
+a qimmiti yalghal bolsun
+s qimmiti sanduq bolsun
+
+@s[achquch] qimmiti [merhaba uyghur script ...] bolsun
+@s{achquch} qimmiti a bolsun
+@s{1234567} qimmiti 0 bolsun
+
+# reset button
+fonkisiye sinaq miqdar uchur mezmuni
+    ikrangha [sinaq:] yezilsun
+    ikrangha @uchur[achquch] yezilsun
+    netije rast qayturulsun
+tamamlansun
+
+fonkisiye sinaq bilen s ishlitilsun we netije a bolsun
+
+fonkisiye
