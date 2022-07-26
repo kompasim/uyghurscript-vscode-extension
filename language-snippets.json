@@ -1,0 +1,40 @@
+{
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"ikrangha yezish": {
+		"prefix": "ikrangha",
+		"body": [
+			"ikrangha $1 yezilsun"
+		],
+		"description": "ikrangha melum qimmetni yezish"
+	},
+	"ikrandin oqush": {
+		"prefix": "ikrandin",
+		"body": [
+			"ikrandin $1 oqulsun"
+		],
+		"description": "ikrandin melum qimmetni oqush"
+	},
+	"fonkisiye iniqlash": {
+		"prefix": "fonkisiye",
+		"body": [
+			"fonkisiye $1 miqdar $2 mezmuni",
+			"    # ",
+			"tamamlansun"
+		],
+		"description": "yingi bir fonkisiyeni iniqlash"
+	},
+	"fonkisiye ishlitish": {
+		"prefix": "fonkisiye",
+		"body": [
+			"fonkisiye $1 bilen $2 ishlitilsun we netije $3 bolsun"
+		],
+		"description": "bar bolghan fonkisiyeni ishlitish"
+	}
+}

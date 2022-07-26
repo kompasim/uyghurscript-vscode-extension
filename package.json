@@ -7,7 +7,7 @@
         "vscode": "^1.69.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages", "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -18,8 +18,14 @@
         }],
         "grammars": [{
             "language": "ug",
-            "scopeName": "main.ug",
+            "scopeName": "uyghurscript.ug",
             "path": "./syntaxes/ug.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+              "language": "ug",
+              "path": "./language-snippets.json"
+            }
+          ]
     }
 }

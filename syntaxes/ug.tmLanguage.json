@@ -1,32 +1,123 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "uyghurscript",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.ug",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.ug",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.ug",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "main.ug"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "uyghurscript",
+    "patterns": [
+        {
+            "include": "#expression"
+        }
+    ],
+    "repository": {
+        "expression": {
+            "patterns": [
+                {
+                    "name": "entity.name.function",
+                    "match": "\\b(san|xet|quruq|sanduq|logika|rast|yalghan|tewellut|azad|wapat|fonkisiye|mezmuni|nawada|eger|egerde|bolsa|bolmisa|tamamlansun)\\b"
+                },
+                {
+                    "name": "keyword.control",
+                    "match": "\\b(yezilsun|oqulsun|ikrandin|ikrangha|miqdar|qimmiti|bolsun|bilen|ishlitilsun|qayturulsun|we|netije)\\b"
+                },
+                {
+                    "name": "keyword.control",
+                    "match": "\\b(hemde|yaki|ekische|qushulghan|elinghan|kupeytilgen|bulungen|kichik|chong|ulanghan|teng)\\b"
+                },
+                {
+                    "name": "comment",
+                    "match": "#.*"
+                },
+                {
+                    "include": "#strings"
+                },
+                {
+                    "include": "#numbers"
+                },
+                {
+                    "include": "#punctuations"
+                },
+                {
+                    "name": "variable",
+                    "match": "[$_a-zA-Z][a-zA-Z0-9]*"
+                },
+                {
+                    "name": "variable.language.self",
+                    "match": "@(\\-|\\+|\\*)"
+                },
+                {
+                    "name": "variable.language.self",
+                    "match": "@[$_a-zA-Z][_a-zA-Z0-9]*"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.ug",
+            "begin": "\\[",
+            "end": "\\]",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.ug",
+                    "match": "\\\\."
+                },
+                {
+                    "name": "constant.character.escape.ug",
+                    "match": "\\\\."
+                },
+                {
+                    "name": "punctuation.term.myscript",
+                    "begin": "\\{",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "meta.brace.curly.myscript"
+                        }
+                    },
+                    "end": "\\}",
+                    "endCaptures": {
+                        "0": {
+                            "name": "meta.brace.curly.myscript"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#numbers"
+                        },
+                        {
+                            "include": "#strings"
+                        }
+                    ]
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.integer.myscript",
+                    "match": "\\b(\\d+)\\b"
+                },
+                {
+                    "name": "constant.numeric.decimal.myscript",
+                    "match": "\\b(\\d+\\.\\d+)\\b"
+                }
+            ]
+        },
+        "punctuations": {
+            "patterns": [
+                {
+                    "name": "punctuation.curly.open.myscript",
+                    "match": "\\["
+                },
+                {
+                    "name": "punctuation.curly.close.myscript",
+                    "match": "\\]"
+                },
+                {
+                    "name": "punctuation.curly.open.myscript",
+                    "match": "\\{"
+                },
+                {
+                    "name": "punctuation.curly.close.myscript",
+                    "match": "\\}"
+                }
+            ]
+        }
+    },
+    "scopeName": "uyghurscript.ug"
 }
