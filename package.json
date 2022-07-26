@@ -1,0 +1,25 @@
+{
+    "name": "ugscript",
+    "displayName": "ugscript",
+    "description": "uyghur script language extension ...",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ug",
+            "aliases": ["uyghurscript", "ug"],
+            "extensions": [".ug","uy",".ugs",".uys"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ug",
+            "scopeName": "main.ug",
+            "path": "./syntaxes/ug.tmLanguage.json"
+        }]
+    }
+}
