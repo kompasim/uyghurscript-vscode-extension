@@ -1,40 +1,131 @@
 {
-	"Print to console": {
-		"prefix": "log",
+	"salam dunya": {
+		"prefix": "salam",
 		"body": [
-			"console.log('$1');",
-			"$2"
+			"# salam dunya",
+			"miqdar salam qimmiti quruq bolsun",
+			"salam qimmiti [salam dunya!] bolsun",
+			"ikrangha salam yezilsun",
+			"salam qimmiti [merhaba palanining oghli pustani, xush kepsiz ...] bolsun",
+			"ikrangha salam yezilsun",
+			""
 		],
-		"description": "Log output to console"
+		"description": "uyghurche salam dunya programmisi (hello world program)"
 	},
 	"ikrangha yezish": {
 		"prefix": "ikrangha",
 		"body": [
 			"ikrangha $1 yezilsun"
 		],
-		"description": "ikrangha melum qimmetni yezish"
+		"description": "ikrangha melum qimmetni yezish (read from console)"
 	},
 	"ikrandin oqush": {
 		"prefix": "ikrandin",
 		"body": [
 			"ikrandin $1 oqulsun"
 		],
-		"description": "ikrandin melum qimmetni oqush"
+		"description": "ikrandin melum qimmetni oqush (write to console)"
+	},
+	"miqdar iniqlash": {
+		"prefix": "miqdar",
+		"body": [
+			"miqdar miqdarIsmi qimmiti quruq bolsun"
+		],
+		"description": "yingi miqdar iniqlash (declare variable)"
+	},
+	"quruq iniqlash": {
+		"prefix": "quruq",
+		"body": [
+			"miqdar $1 qimmiti quruq bolsun"
+		],
+		"description": "quruq miqdar iniqlash (declare empty)"
+	},
+	"sanduq iniqlash": {
+		"prefix": "sanduq",
+		"body": [
+			"miqdar $1 qimmiti sanduq bolsun"
+		],
+		"description": "sanduq miqdar iniqlash (declare box)"
+	},
+	"san iniqlash": {
+		"prefix": "san",
+		"body": [
+			"miqdar $1 qimmiti 0 bolsun"
+		],
+		"description": "san miqdar iniqlash (declare number)"
+	},
+	"xet iniqlash": {
+		"prefix": "xet",
+		"body": [
+			"miqdar $1 qimmiti [] bolsun"
+		],
+		"description": "xet miqdar iniqlash (declare string)"
+	},
+	"logika iniqlash": {
+		"prefix": "logika",
+		"body": [
+			"miqdar $1 qimmiti yalghan bolsun"
+		],
+		"description": "logika miqdar iniqlash (declare boolean)"
+	},
+	"qimmitini yingilash": {
+		"prefix": "qimmiti",
+		"body": [
+			"yingilindighanMiqdar qimmiti $1 bolsun"
+		],
+		"description": "miqdar qimmitini yingilash (update variable)"
+	},
+	"qimmitini yuqitish": {
+		"prefix": "qimmiti",
+		"body": [
+			"yuqitildighanMiqdar qimmiti quruq bolsun"
+		],
+		"description": "miqdar qimmitini yuqitish (delete variable)"
+	},
+	"hisablap chiqirish": {
+		"prefix": "hisab",
+		"body": [
+			"miqdarIsmi = (aMiqdar + bMiqdar) * cMiqdar"
+		],
+		"description": "matimatikiliq hisab ishlesh (arthimetic calculate)"
+	},
+	"eger jumlisi": {
+		"prefix": "eger",
+		"body": [
+			"eger sinaqMiqdar qimmiti quruq bolsa",
+			"    # eger mezmuni",
+			"egerde sinaqMiqdar qimmiti rast bolsa",
+			"    # egerde mezmuni",
+			"bolmisa",
+			"    # bolmisa mezmuni",
+			"tamamlansun"
+		],
+		"description": "eger jumlisi tuzush (if statement)"
+	},
+	"nawada jumlisi": {
+		"prefix": "nawada",
+		"body": [
+			"nawada sinaqMiqdar qimmiti rast bolsa",
+			"    # nawada mezmuni",
+			"tamamlansun"
+		],
+		"description": "nawada jumlisi tuzush (while statement)"
 	},
 	"fonkisiye iniqlash": {
 		"prefix": "fonkisiye",
 		"body": [
-			"fonkisiye $1 miqdar $2 mezmuni",
-			"    # ",
+			"fonkisiye fonkisiyeIsmi miqdar miqdarIsmi mezmuni",
+			"    # fonkisiye mezmuni",
+			"    netije quruq qayturulsun",
 			"tamamlansun"
 		],
-		"description": "yingi bir fonkisiyeni iniqlash"
+		"description": "yingi bir fonkisiyeni iniqlash (declate function)"
 	},
 	"fonkisiye ishlitish": {
 		"prefix": "fonkisiye",
 		"body": [
-			"fonkisiye $1 bilen $2 ishlitilsun we netije $3 bolsun"
+			"fonkisiye fonkisiyeIsmi bilen miqdarIsmi ishlitilsun we netije netijeIsmi bolsun"
 		],
-		"description": "bar bolghan fonkisiyeni ishlitish"
+		"description": "bar bolghan fonkisiyeni ishlitish (call function)"
 	}
 }
