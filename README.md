@@ -1,22 +1,17 @@
 # uyghurscript README
 
-This is the README for your extension "uyghurscript". After writing up a brief description, we recommend including the following sections.
+This is vscode extension for [UyghurScript](https://github.com/kompasim/UyghurScript) language. with this extension you can develop uyghurscript programs more efficiently.
 
 ![screenshot](./others/screenshot.png)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+* syntax highlighting
+* snippets autocompletion
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+> you need to downlaod uyghur script binary to execute programs, please visit [UyghurScript](https://github.com/kompasim/UyghurScript) for more information about uyghurscript, u can see some examples in `./examples/` folder and documents in `./document/` folder ...
 
 ## Extension Settings
 
@@ -39,7 +34,7 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of uyghur script vscode extension.
 
 ### 1.0.1
 

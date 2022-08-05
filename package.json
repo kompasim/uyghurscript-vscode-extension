@@ -2,7 +2,7 @@
     "name": "uyghurscript",
     "displayName": "uyghurscript",
     "description": "uyghur script language extension ...",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.69.0"
     },
@@ -21,11 +21,9 @@
             "scopeName": "uyghurscript.ug",
             "path": "./syntaxes/ug.tmLanguage.json"
         }],
-        "snippets": [
-            {
-              "language": "ug",
-              "path": "./language-snippets.json"
-            }
-          ]
+        "snippets": [{
+            "language": "ug",
+            "path": "./language-snippets.json"
+        }]
     }
 }
