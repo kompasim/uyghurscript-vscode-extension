@@ -1,7 +1,9 @@
 {
     "name": "uyghurscript",
     "displayName": "uyghurscript",
+    "publisher": "kompasim",
     "description": "uyghur script language extension ...",
+    "icon": "others/icon.png",
     "version": "1.0.0",
     "engines": {
         "vscode": "^1.69.0"
@@ -9,11 +11,20 @@
     "categories": [
         "Programming Languages", "Snippets"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kompasim/uyghurscript-vscode-extension.git"
+    },
+    "homepage": "https://github.com/kompasim/uyghurscript-vscode-extension",
+    "bugs": {
+        "url": "https://github.com/kompasim/uyghurscript-vscode-extension/issues",
+        "email": "kompasim@163.com"
+    },
     "contributes": {
         "languages": [{
             "id": "ug",
             "aliases": ["uyghurscript", "ug"],
-            "extensions": [".ug","uy",".ugs",".uys"],
+            "extensions": [".ug",".uy"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
