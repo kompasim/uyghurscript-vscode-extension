@@ -19,6 +19,10 @@ Initial release of uyghur script vscode extension.
 
 Added features X, Y, and Z.
 
+## How to use
+
+> just search `uyghur` keyword in vscode, after installation create a file with `.ug` extension, after that you can use the features of this extension.
+
 ## For more information
 
 > you need to downlaod uyghur script binary to execute programs, please visit [UyghurScript](https://github.com/kompasim/UyghurScript) for more information about uyghurscript, u can see some examples in `./examples/` folder and documents in `./document/` folder ...
